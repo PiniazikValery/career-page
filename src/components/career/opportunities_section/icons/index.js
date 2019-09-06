@@ -5,7 +5,7 @@ export const RombCheckIcon = () => {
         <svg xmlns="http://www.w3.org/2000/svg" width="59.396" height="59.397" viewBox="0 0 59.396 59.397">
             <g id="Иконка" transform="translate(-625.302 -1530.302)">
                 <rect id="Rectangle_41" data-name="Rectangle 41" width="42" height="42" rx="4" transform="translate(655 1530.302) rotate(45)" fill="#4654aa" />
-                <g id="Rectangle_42" data-name="Rectangle 42" transform="translate(655 1533.302) rotate(45)" fill="#fff" stroke="#fff" stroke-width="3">
+                <g id="Rectangle_42" data-name="Rectangle 42" transform="translate(655 1533.302) rotate(45)" fill="#fff" stroke="#fff" strokeWidth="3">
                     <rect width="38" height="38" rx="4" stroke="none" />
                     <rect x="1.5" y="1.5" width="35" height="35" rx="2.5" fill="none" />
                 </g>

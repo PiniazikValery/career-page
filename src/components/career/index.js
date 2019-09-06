@@ -2,6 +2,7 @@ import React from 'react';
 import AppBar from './app_bar';
 import StatisticSection from './statistic_section';
 import OpportunitiesSection from './opportunities_section';
+import OurTeamSection from './our_team_section';
 
 const Career = () => {
     return (
@@ -10,6 +11,7 @@ const Career = () => {
             <div className="content">
                 <StatisticSection />
                 <OpportunitiesSection />
+                <OurTeamSection />
             </div>
         </div>
     );

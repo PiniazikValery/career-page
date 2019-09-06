@@ -18,6 +18,7 @@ const OpportunitiesSection = () => {
                 <Opportunity>
                     Современные ресурсы (серверные, коммуникационные, FinTech, AI, Date Base)
                 </Opportunity>
+                <br />
                 <Opportunity>
                     Профессиональное окружение из старательно отобранных коллег
                 </Opportunity>

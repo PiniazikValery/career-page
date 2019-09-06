@@ -5,6 +5,7 @@
     outline: outset;
     outline-color: #25252521;
     outline-width: 0.1px;
+    overflow: hidden;
 }
 
 .opportunities-content {
@@ -33,10 +34,11 @@
         width: 370px;
         overflow: hidden;
         text-align: initial;
+        vertical-align: top;
 
         svg {
            float: left; 
            padding-right: 20px;
         }
-    }
+    }    
 }
