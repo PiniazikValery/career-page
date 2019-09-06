@@ -1,0 +1,42 @@
+.opportunities-section {
+    width: 100%;
+    height: 604px;
+    background-color: #FAFBFC;
+    outline: outset;
+    outline-color: #25252521;
+    outline-width: 0.1px;
+}
+
+.opportunities-content {
+    height: 100%;
+    border-top: 94px solid transparent;
+
+    .quote {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 30px;
+
+        .autor {
+            font-weight: normal;
+            line-height: 30pt;
+            font-size: 15px;
+            color: gray;
+        }
+    }
+
+    .opportunity {
+        display: inline-block;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 370px;
+        overflow: hidden;
+        text-align: initial;
+
+        svg {
+           float: left; 
+           padding-right: 20px;
+        }
+    }
+}

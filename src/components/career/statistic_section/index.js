@@ -4,7 +4,9 @@ const StatisticSection = () => {
     return (
         <div className="statistic-section">
             <div className="statistic-content">
-                Рекрутинговый сайт интернет-магазина<img alt="tile.expert logo" className="te-logo" src="/logo.png" /><br />
+                <div className="intro">
+                    Рекрутинговый сайт интернет-магазина<img alt="tile.expert logo" className="te-logo" src="/logo.png" /><br />
+                </div>
                 <div className="statistic-numbers">
                     <div className="statistic-number">
                         <h1>>200</h1>

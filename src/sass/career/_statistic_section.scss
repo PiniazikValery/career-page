@@ -37,6 +37,11 @@
     height: 100%;
     border-top: 94px solid transparent;
 
+    .intro {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
     .statistic-numbers {
         padding-top: 125px;
 
@@ -84,7 +89,7 @@
 
 .te-logo {
     padding-left: 10px;
-    vertical-align: -60%;
+    vertical-align: -50%;
     margin-top:6.5px;
     background-size:100% auto;
     margin-right: 5px;
