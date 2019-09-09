@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { PlusIcon, MinusIcon } from './icons';
+import DesktopVacancySection from './desktopVacancySection'
 
 const VacancySection = () => {
     const [devSectionOpen, setDevSection] = useState(false);
@@ -27,63 +27,14 @@ const VacancySection = () => {
     };
 
     return (
-        <div className="vacancy-section">
-            <div className="vacancy-content">
-                <div className="intro">
-                    Вакансии
-                    <div className="description">
-                        Ищем лучших, а не ближайших!
-                    </div>
-                </div>
-                <div className="vacancy-block">
-                    <div onClick={opencloseDevSection} className="vacancy-section">
-                        {devSectionOpen ? <MinusIcon /> : <PlusIcon />}
-                        Дизайн и разработка
-                    </div>
-                    <div className={`dev vacancies ${devSectionOpen ? '' : 'close'}`}>
-                        <div className="vacancy">
-
-                        </div>
-                        <div className="vacancy">
-
-                        </div>
-                        <div className="vacancy">
-
-                        </div>
-                    </div>
-                    <div onClick={opencloseSupportSection} className="vacancy-section">
-                        {supportSectionOpen ? <MinusIcon /> : <PlusIcon />}
-                        Клиентская поддержка
-                    </div>
-                    <div className={`support vacancies ${supportSectionOpen ? '' : 'close'}`}>
-                        <div className="vacancy">
-
-                        </div>
-                        <div className="vacancy">
-
-                        </div>
-                        <div className="vacancy">
-
-                        </div>
-                    </div>
-                    <div onClick={opencloseCommerceSection} className="vacancy-section">
-                        {commerceSectionOpen ? <MinusIcon /> : <PlusIcon />}
-                        Коммерческий отдел
-                    </div>
-                    <div className={`commerce vacancies ${commerceSectionOpen ? '' : 'close'}`}>
-                        <div className="vacancy">
-
-                        </div>
-                        <div className="vacancy">
-
-                        </div>
-                        <div className="vacancy">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <DesktopVacancySection
+            devSectionOpen={devSectionOpen}
+            supportSectionOpen={supportSectionOpen}
+            commerceSectionOpen={commerceSectionOpen}
+            opencloseDevSection={opencloseDevSection}
+            opencloseSupportSection={opencloseSupportSection}
+            opencloseCommerceSection={opencloseCommerceSection}
+        />
     );
 };
 

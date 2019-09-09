@@ -12,7 +12,6 @@ const ImageSlider = (props) => {
     const [selectedItem, setItem] = useState(Math.round(props.items.length / 2));
 
     useEffect(() => {
-        console.log('hit');
         let result = undefined;
         const divLeft = selectedItem % props.items.length;
         if (divLeft === 0) {
@@ -62,9 +61,9 @@ const ImageSlider = (props) => {
         );
     }
 
-    const renderRightOverflow = (rightOverflow) => {
+    const renderRightOverflow = () => {
         let arrayOfOverflows = [];
-        for (let i = 1; i <= rightOverflow; i++) {
+        for (let i = 1; i <= overflow[1]; i++) {
             arrayOfOverflows.push(
                 <div key={props.items.length * i} className="slides-content" style={{
                     left: (-240 * (selectedItem - 1)) - 120 + (props.items.length * 240 * i)
@@ -102,7 +101,7 @@ const ImageSlider = (props) => {
                             );
                         })}
                     </div>
-                    {renderRightOverflow(overflow[1])}
+                    {renderRightOverflow()}
                 </div>
             </div>
         </div>

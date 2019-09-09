@@ -17,3 +17,11 @@ export const PlusIcon = () => {
         </svg>
     );
 };
+
+export const RightArrow = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8">
+            <path id="Path_377" data-name="Path 377" d="M16.01,11H4v2H16.01v3L20,12,16.01,8Z" transform="translate(-4 -8)" fill="#1264a3" />
+        </svg>
+    );
+};
