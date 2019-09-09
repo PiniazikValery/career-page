@@ -4,6 +4,7 @@ import StatisticSection from './statistic_section';
 import OpportunitiesSection from './opportunities_section';
 import OurTeamSection from './our_team_section';
 import HireSystemSection from './hire_system_section';
+import VacancySection from './vacancy_section';
 
 const Career = () => {
     return (
@@ -13,6 +14,7 @@ const Career = () => {
                 <StatisticSection />
                 <OpportunitiesSection />
                 <HireSystemSection />
+                <VacancySection />
                 <OurTeamSection />
             </div>
         </div>
