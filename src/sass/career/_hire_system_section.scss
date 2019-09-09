@@ -22,11 +22,32 @@
 
             .send-point {
                 position: relative;
-                width: 5%;
+                width: 5%;               
 
-                svg {
+                .point {
+                    display: inline-block;
                     position: absolute;
                     top: -10px;
+
+                    .point-content {
+                        position: relative;
+
+                        .intro {
+                            position: absolute;
+                            text-align: left;
+                            width: 200px;
+                            left: -10px;
+                            top: 70px;
+                            font-weight: 400;
+                            font-size: larger;
+        
+                            .description {
+                                font-weight: normal;
+                                font-size: 15px;
+                                padding-top: 10px;
+                            }
+                        }
+                    }
                 }
             }
 
@@ -34,9 +55,30 @@
                 position: relative;
                 width: 60%;
 
-                svg {
+                .point {
+                    display: inline-block;
                     position: absolute;
                     top: -10px;
+
+                    .point-content {
+                        position: relative;
+
+                        .intro {
+                            position: absolute;
+                            text-align: left;
+                            width: 200px;
+                            left: -10px;
+                            top: 70px;
+                            font-weight: 400;
+                            font-size: larger;
+        
+                            .description {
+                                font-weight: normal;
+                                font-size: 15px;
+                                padding-top: 10px;
+                            }
+                        }
+                    }
                 }
             }
 
@@ -44,15 +86,36 @@
                 position: relative;
                 width: 140%;
 
-                svg {
+                .point {
+                    display: inline-block;
                     position: absolute;
-                    top: -10px;                    
+                    top: -10px;
+
+                    .point-content {
+                        position: relative;
+
+                        .intro {
+                            position: absolute;
+                            text-align: left;
+                            width: 200px;
+                            left: -10px;
+                            top: 70px;
+                            font-weight: 400;
+                            font-size: larger;
+        
+                            .description {
+                                font-weight: normal;
+                                font-size: 15px;
+                                padding-top: 10px;
+                            }
+                        }
+                    }
                 }
             }
 
             .finish-point {
                 position: relative;
-                width: 200%;
+                width: 199%;
 
                 svg {
                     position: absolute;
