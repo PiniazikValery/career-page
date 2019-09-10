@@ -1,0 +1,54 @@
+.alternatives-section {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 386px;
+    background-color: #4654AA;
+
+    .centered-button {
+        position: absolute;
+        left: 50%;
+        top: 100%;
+
+        .send-resume-button {
+            position: relative;
+            cursor: pointer;
+            line-height: 45px;
+            background-color: white;
+            border-radius: 5px;
+            color: #4654AA;
+            left: -50%;
+            display: inline-block;
+            bottom: 90px;
+            width: 211px;
+            height: 50px;
+        }
+    }   
+
+    .background-item {
+        position: absolute;
+        display: inline-block;
+    }
+
+    .alternatives-content {
+        height: 100%;
+        border-top: 94px solid transparent;
+
+        .intro {
+            font-size: 20px;
+            font-weight: 400;
+            font-size: 25px;
+            margin-bottom: 50px;
+            color: white;
+
+            .description {
+                width: 90%;
+                padding-top: 20px;
+                margin: auto;
+                font-weight: normal;
+                font-size: 20px;
+                color: white;
+            }
+        }
+    }
+}
