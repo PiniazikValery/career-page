@@ -2,7 +2,7 @@ import React from 'react';
 
 const StatisticSection = () => {
     return (
-        <div className="statistic-section">
+        <div className="statistic-section" style={{ backgroundImage: 'url("map.png")' }}>
             <div className="statistic-content">
                 <div className="intro">
                     Рекрутинговый сайт интернет-магазина<img alt="tile.expert logo" className="te-logo" src="logo.png" /><br />
