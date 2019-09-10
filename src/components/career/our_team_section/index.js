@@ -15,37 +15,37 @@ const OurTeamSection = () => {
                     items={
                         [
                             {
-                                imgSrc: '/ourTeamPhotos/women1.png',
+                                imgSrc: 'ourTeamPhotos/women1.png',
                                 name: 'Лана Дэль Рэй',
                                 position: 'Певица'
                             },
                             {
-                                imgSrc: '/ourTeamPhotos/women2.png',
+                                imgSrc: 'ourTeamPhotos/women2.png',
                                 name: 'Анджелина Джоли',
                                 position: 'Актриса'
                             },
                             {
-                                imgSrc: '/ourTeamPhotos/man2.png',
+                                imgSrc: 'ourTeamPhotos/man2.png',
                                 name: 'Брэд Питт',
                                 position: 'Актер'
                             },
                             {
-                                imgSrc: '/ourTeamPhotos/man3.png',
+                                imgSrc: 'ourTeamPhotos/man3.png',
                                 name: 'Крис Хемсворт',
                                 position: 'Актер'
                             },
                             {
-                                imgSrc: '/ourTeamPhotos/women4.png',
+                                imgSrc: 'ourTeamPhotos/women4.png',
                                 name: 'Эмма Уотсон',
                                 position: 'Актриса'
                             },
                             {
-                                imgSrc: '/ourTeamPhotos/man4.png',
+                                imgSrc: 'ourTeamPhotos/man4.png',
                                 name: 'Роберт Дауни(младший)',
                                 position: 'Актер'
                             },
                             {
-                                imgSrc: '/ourTeamPhotos/women3.png',
+                                imgSrc: 'ourTeamPhotos/women3.png',
                                 name: 'Скарлетт Йоханссон',
                                 position: 'Актриса'
                             }
