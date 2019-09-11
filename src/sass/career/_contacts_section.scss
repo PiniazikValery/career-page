@@ -1,0 +1,61 @@
+.contacts-section {
+    width: 100%;
+
+    .contacts-content {
+        border-top: 94px solid transparent;
+
+        .intro {
+            font-size: 30px;
+            font-weight: 400;
+            margin-bottom: 10px;
+
+            .description {
+                font-weight: normal;
+                line-height: 30pt;
+                font-size: 15px;
+                color: gray;
+            }
+        }
+
+        .options {
+            position: relative;
+            left: -1.5%;
+            padding: 20px;
+            height: 80px;
+            .comments-option {
+                display: inline-block;
+    
+                svg {
+                    display: block;
+                    margin: auto;
+                    padding-bottom: 15px;
+                }
+            }
+    
+            .email-option {
+                display: inline-block;
+    
+                svg {
+                    display: block;
+                    margin: auto;
+                    padding-bottom: 15px;
+                }
+            }
+    
+            .vl {
+                display: inline-block;
+                border-left: 1px solid #4654aa;
+                margin-left: 30px;
+                margin-right: 30px;
+                height: 100%;
+            }
+        }
+
+        .social-links {
+            svg {
+                padding: 10px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
