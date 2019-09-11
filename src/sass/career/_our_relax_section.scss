@@ -1,0 +1,104 @@
+.our-relax-section {
+    width: 100%;
+    height: 519px;
+    overflow: hidden;
+
+    .layers {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        
+        .dots-layer {
+            position: absolute;
+            background-image: radial-gradient(#F7F7F7 40%, transparent 40%);
+            background-color: #EFEFEF;
+            background-position: 0px 0px, 20px 20px;
+            background-size: 10px 10px;
+            height: 100%;
+            right: 2%;
+            left: 10%;
+        }
+
+        .location-layer {
+            position: absolute;
+            background-color: #F0F8FA;
+            top: 20px;
+            height: 100%;
+            right: 1%;
+            left: 5%;
+
+            .location {
+                padding-left: 5px;
+                text-align: left;
+
+                svg {
+                    position: relative;
+                    top: 5px;
+                }
+            }
+        }
+
+        .slider-layer {
+            position: absolute;
+            top: 60px;
+            height: 100%;
+            right: 0%;
+            left: 2%;
+            text-align: left;
+
+            .description {
+                width: 95%;
+                font-size: 25px;
+                position: relative;
+                left: 3%;
+                top: 10%;
+
+                .sharp {
+                    position: relative;
+                    opacity: 0.2;
+                    font-size: 100px;
+                    top: 80px;
+                    font-family: sans-serif;
+                }
+            }
+
+            .dots-placeholder {
+                position: relative;
+
+                .dots {
+                    position: absolute;
+                    right: 10px;
+                    top: -30px;
+
+                    .dot {
+                        display: inline;
+                        cursor: pointer;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                    }
+                }
+            }
+
+            .image-slider {
+                text-align: left;
+                float: left;
+                width: 630px;
+                height: 419px;
+
+                @keyframes fadeOut {
+                    0% { opacity: 0;}
+                    100% { opacity: 1;}
+                }
+
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    animation: fadeOut 1s;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+    }
+}
