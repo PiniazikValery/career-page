@@ -53,6 +53,11 @@
             display: inline-block;
         }
 
+        .from.mobile {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
         .statistic-number {
             h1 {
                 font-family: 'Lato', sans-serif;
@@ -65,6 +70,7 @@
                 text-decoration: none;
             } 
             display: inline-block;
+            padding-bottom: 30px;
             padding-left: 50px;
             padding-right: 50px;
     
@@ -76,6 +82,11 @@
             }
         }
 
+        .statistic-number.mobile {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
         .about-customers {
             padding-right: 25px;
         }
@@ -83,7 +94,11 @@
         .about-countries {
             padding-left: 25px;
         }
-    }    
+    }  
+    
+    .statistic-numbers.mobile {
+        padding-top: 60px;
+    }
 }
 
 .te-logo {
