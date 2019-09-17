@@ -3,8 +3,8 @@ import { RombCheckIcon } from './icons';
 
 const Opportunity = (props) => {
     return (
-        <div className="opportunity">
-            <RombCheckIcon />
+        <div className={`opportunity${props.mobile ? ' mobile' : ''}`}>
+            {props.mobile ? undefined : <RombCheckIcon />}
             {props.children}
         </div>
     );
