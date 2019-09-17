@@ -1,10 +1,10 @@
 .opportunities-section {
     width: 100%;
-    height: 604px;
     background-color: #FAFBFC;
     outline: outset;
     outline-color: #25252521;
     outline-width: 0.1px;
+    border-bottom: 94px solid transparent;
     overflow: hidden;
 }
 
@@ -27,11 +27,11 @@
 
     .opportunity {
         display: inline-block;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
         padding-top: 40px;
         padding-bottom: 40px;
-        width: 370px;
+        width: 362px;
         overflow: hidden;
         text-align: initial;
         vertical-align: top;
@@ -40,5 +40,9 @@
            float: left; 
            padding-right: 20px;
         }
-    }    
+    }
+    
+    .opportunity.mobile {
+        width: 300px;
+    }
 }
