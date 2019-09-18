@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import DesktopVacancySection from './desktopVacancySection'
+import DesktopVacancySection from './DesktopVacancySection';
+import MobileVacancySection from './MobileVacancySection';
+import { Desktop, Mobile } from '../../../responsive_design';
 
 const VacancySection = () => {
     const [devSectionOpen, setDevSection] = useState(false);
@@ -27,14 +29,29 @@ const VacancySection = () => {
     };
 
     return (
-        <DesktopVacancySection
-            devSectionOpen={devSectionOpen}
-            supportSectionOpen={supportSectionOpen}
-            commerceSectionOpen={commerceSectionOpen}
-            opencloseDevSection={opencloseDevSection}
-            opencloseSupportSection={opencloseSupportSection}
-            opencloseCommerceSection={opencloseCommerceSection}
-        />
+        [
+            <Desktop key="desktop-vacancy-section">
+                < DesktopVacancySection
+                    devSectionOpen={devSectionOpen}
+                    supportSectionOpen={supportSectionOpen}
+                    commerceSectionOpen={commerceSectionOpen}
+                    opencloseDevSection={opencloseDevSection}
+                    opencloseSupportSection={opencloseSupportSection}
+                    opencloseCommerceSection={opencloseCommerceSection}
+                />
+            </Desktop>
+            ,
+            <Mobile key="mobile-vacancy-section">
+                <MobileVacancySection
+                    devSectionOpen={devSectionOpen}
+                    supportSectionOpen={supportSectionOpen}
+                    commerceSectionOpen={commerceSectionOpen}
+                    opencloseDevSection={opencloseDevSection}
+                    opencloseSupportSection={opencloseSupportSection}
+                    opencloseCommerceSection={opencloseCommerceSection}
+                />
+            </Mobile>
+        ]
     );
 };
 

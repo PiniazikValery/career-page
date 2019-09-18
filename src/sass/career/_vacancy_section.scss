@@ -1,11 +1,11 @@
 .vacancy-section {
     width: 100%;
-    height: 819px;
     background-color: #FAFBFC;
     outline: outset;
     outline-color: #25252521;
     outline-width: 0.1px;
     overflow: hidden;
+    border-bottom: 94px solid transparent;
 
     .vacancy-content {
         height: 100%;
@@ -27,6 +27,7 @@
         .vacancy-block {
             position: relative;
             margin: auto;
+            margin-bottom: 30px;
             width: 1230px;
             box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 
@@ -47,6 +48,7 @@
                 width: 100%;
                 height: 78px;
                 background-color: #F5F5F5;
+                border-bottom: initial;
                 border-top: 5px solid #F0F1F3;
                 &:last-child {
                     border-bottom: 5px solid #F0F1F3;
@@ -115,6 +117,39 @@
                         cursor: pointer;
                         padding-left: 10px;
                     }
+                }
+            }
+        }
+
+        .vacancy-block.mobile {
+            width: 100%;
+            margin-bottom: 30px;
+
+            .vacancy {
+                overflow: hidden;
+            }
+
+            .position {
+                cursor:pointer;
+                color: #1264A3;
+                padding-top: 10px;
+                width: initial;
+                height: 42px;
+                overflow: hidden;
+                line-height: initial;
+            }
+
+            .salary-wrapper {
+                position: relative;
+                padding-left: 20px;
+                width: 100%;
+                height: 35%;
+
+                .salary {
+                    width: initial;
+                    position: absolute;
+                    line-height: initial;
+                    bottom: 10px;
                 }
             }
         }
