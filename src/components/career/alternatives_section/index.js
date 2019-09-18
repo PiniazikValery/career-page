@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Rectangle, Ellipse, Triangle } from './icons';
+import { useMediaQuery } from 'react-responsive';
+import deviceSizes from '../../../responsive_design/device_sizes';
 
 const AlternativesSection = () => {
     const [backgroundItems, SetBackgroundItems] = useState([]);
+
+    const isMobile = useMediaQuery({ query: `(max-width: ${deviceSizes.mobileMaxWidth}px)` });
 
     useEffect(() => {
         let items = [];
@@ -45,7 +49,7 @@ const AlternativesSection = () => {
             <div className="alternatives-content">
                 <div className="intro">
                     Не нашли подходящую вакансию?
-                    <div className="description">
+                    <div className={`description${isMobile ? ' mobile' : ''}`}>
                         Мы всегда открыты для перспективных и энергичных людей! Отправьте нам свое резюме, и в случае появления вакансии, соответствующей вашему опыту, мы обязательно свяжемся с вами!
                     </div>
                 </div>
