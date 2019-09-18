@@ -81,7 +81,7 @@ const ImageSlider = (props) => {
 
     return (
         <div className="slider">
-            <div className="content" style={
+            <div className={`content${props.mobile ? ' mobile' : ''}`} style={
                 {
                     width: 240 * props.items.length
                 }
@@ -89,8 +89,8 @@ const ImageSlider = (props) => {
                 <div className="slides">
                     <div className="active-name">{activeName}</div>
                     <div className="active-position">{activePosition}</div>
-                    <div onClick={clickLeftArrow} className="leftArrow"><LeftArrow /></div>
-                    <div onClick={clickRightArrow} className="rightArrow"><RightArrow /></div>
+                    <div onClick={clickLeftArrow} className={`leftArrow${props.mobile ? ' mobile' : ''}`}><LeftArrow /></div>
+                    <div onClick={clickRightArrow} className={`rightArrow${props.mobile ? ' mobile' : ''}`}><RightArrow /></div>
                     {renderLeftOverflow()}
                     <div className="slides-content" style={{
                         left: (-240 * (selectedItem - 1)) - 120

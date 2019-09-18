@@ -81,6 +81,18 @@
                 position: absolute;
                 cursor: pointer;
             }
+
+            .leftArrow.mobile {
+                left: -155px;
+            }
+
+            .rightArrow.mobile {
+                left: 85px;
+            }
         }
+    }
+
+    .content.mobile {
+        padding-top: 20px;
     }
 }
