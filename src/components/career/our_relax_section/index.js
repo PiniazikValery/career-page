@@ -1,10 +1,14 @@
 import React from 'react';
 import { LocationPoint } from './icons';
 import ImageSlider from './ImageSlider';
+import { useMediaQuery } from 'react-responsive';
+import deviceSizes from '../../../responsive_design/device_sizes';
 
 const OurRelaxSection = () => {
+    const isMobile = useMediaQuery({ query: `(max-width: ${deviceSizes.mobileMaxWidth}px)` });
+
     return (
-        <div className="our-relax-section">
+        <div className={`our-relax-section${isMobile ? ' mobile' : ''}`}>
             <div className="layers">
                 <div className="dots-layer" />
                 <div className="location-layer">
@@ -15,6 +19,7 @@ const OurRelaxSection = () => {
                 </div>
                 <div className="slider-layer" >
                     <ImageSlider
+                        mobile={isMobile}
                         images={[
                             {
                                 imgSrc: 'ourRelaxPhotos/photo1.png'
@@ -60,7 +65,7 @@ const OurRelaxSection = () => {
                             },
                         ]}
                     />
-                    <div className="description">
+                    <div className={`description${isMobile ? ' mobile' : ''}`}>
                         <div className="sharp">
                             #
                     </div>

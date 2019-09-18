@@ -62,6 +62,12 @@
                 }
             }
 
+            .description.mobile {
+                top: 330px;
+                z-index: 0.5;
+                font-size: 15px;
+            }
+
             .dots-placeholder {
                 position: relative;
 
@@ -99,6 +105,18 @@
                     animation-fill-mode: forwards;
                 }
             }
+
+            .image-slider.mobile {
+                z-index: 1;
+                position: absolute;
+                width: initial;
+                left: -25px;
+            
+            }
         }
     }
+}
+
+.our-relax-section.mobile {
+    height: 600px;
 }
