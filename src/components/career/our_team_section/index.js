@@ -1,7 +1,11 @@
 import React from 'react';
 import ImageSlider from './ImageSlider';
+import { useMediaQuery } from 'react-responsive';
+import deviceSizes from '../../../responsive_design/device_sizes';
 
 const OurTeamSection = () => {
+    const isMobile = useMediaQuery({ query: `(max-width: ${deviceSizes.mobileMaxWidth}px)` });
+
     return (
         <div className="our-team-section">
             <div className="our-team-content">
@@ -12,6 +16,7 @@ const OurTeamSection = () => {
                     </div>
                 </div>
                 <ImageSlider
+                    mobile={isMobile}
                     items={
                         [
                             {
