@@ -7,7 +7,7 @@ const OurTeamSection = () => {
     const isMobile = useMediaQuery({ query: `(max-width: ${deviceSizes.mobileMaxWidth}px)` });
 
     return (
-        <div className="our-team-section">
+        <div id="our_team" className="our-team-section">
             <div className="our-team-content">
                 <div className="intro">
                     Наша команда

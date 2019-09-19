@@ -21,7 +21,7 @@ const ImageSlider = (props) => {
     }, [props.images]);
 
     return (
-        <div className="image-slider">
+        <div className={`image-slider${props.mobile ? ' mobile' : ''}`}>
             {images.map((image, index) => {
                 if (index === selectedImage) {
                     return <img key={index} alt={`img-${index}`} src={image.src} />

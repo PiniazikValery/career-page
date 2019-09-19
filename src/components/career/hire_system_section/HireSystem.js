@@ -3,7 +3,7 @@ import { Point, EmailIcon } from './icons';
 
 const HireSystem = (props) => {
     return (
-        <div className={`hire-system-section${props.mobile ? ' mobile' : ''}`}>
+        <div id="hire_system" className={`hire-system-section${props.mobile ? ' mobile' : ''}`}>
             <div className="hire-system-content">
                 <div className="intro">
                     Система найма
