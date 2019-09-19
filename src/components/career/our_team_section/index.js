@@ -20,39 +20,44 @@ const OurTeamSection = () => {
                     items={
                         [
                             {
-                                imgSrc: 'ourTeamPhotos/women1.png',
-                                name: 'Лана Дэль Рэй',
-                                position: 'Певица'
-                            },
-                            {
-                                imgSrc: 'ourTeamPhotos/women2.png',
-                                name: 'Анджелина Джоли',
-                                position: 'Актриса'
-                            },
-                            {
                                 imgSrc: 'ourTeamPhotos/man2.png',
-                                name: 'Брэд Питт',
-                                position: 'Актер'
+                                name: 'undefined',
+                                position: 'undefined'
                             },
                             {
                                 imgSrc: 'ourTeamPhotos/man3.png',
-                                name: 'Крис Хемсворт',
-                                position: 'Актер'
+                                name: 'undefined',
+                                position: 'undefined'
                             },
                             {
-                                imgSrc: 'ourTeamPhotos/women4.png',
-                                name: 'Эмма Уотсон',
-                                position: 'Актриса'
+                                imgSrc: 'ourTeamPhotos/women1.png',
+                                name: 'undefined',
+                                position: 'undefined'
                             },
                             {
                                 imgSrc: 'ourTeamPhotos/man4.png',
-                                name: 'Роберт Дауни(младший)',
-                                position: 'Актер'
+                                name: 'Кукреш Сергей',
+                                position: 'CEO'
                             },
                             {
-                                imgSrc: 'ourTeamPhotos/women3.png',
-                                name: 'Скарлетт Йоханссон',
-                                position: 'Актриса'
+                                imgSrc: 'ourTeamPhotos/man5.png',
+                                name: 'undefined',
+                                position: 'undefined'
+                            },
+                            {
+                                imgSrc: 'ourTeamPhotos/man6.png',
+                                name: 'undefined',
+                                position: 'undefined'
+                            },
+                            {
+                                imgSrc: 'ourTeamPhotos/man7.png',
+                                name: 'undefined',
+                                position: 'undefined'
+                            },
+                            {
+                                imgSrc: 'ourTeamPhotos/man1.png',
+                                name: 'undefined',
+                                position: 'undefined'
                             }
                         ]
                     }
