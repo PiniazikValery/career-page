@@ -3,7 +3,7 @@ import { PlusIcon, MinusIcon, RightArrow } from './icons';
 
 const DesktopVacancySection = (props) => {
     return (
-        <div className="vacancy-section">
+        <div id="vacancies" className="vacancy-section">
             <div className="vacancy-content">
                 <div className="intro">
                     Вакансии
