@@ -22,7 +22,7 @@ const DesktopVacancySection = (props) => {
                             <div className="position">PHP-программист</div>
                             <div className="salary">от 1000 EUR</div>
                             <div className="more">
-                                <div className="text">Детали</div>
+                                <div className="text">Подробнее</div>
                                 <RightArrow />
                             </div>
                         </div>
@@ -30,7 +30,7 @@ const DesktopVacancySection = (props) => {
                             <div className="position">Специалист машинного обучения</div>
                             <div className="salary">от 1300 EUR</div>
                             <div className="more">
-                                <div className="text">Детали</div>
+                                <div className="text">Подробнее</div>
                                 <RightArrow />
                             </div>
                         </div>
@@ -38,7 +38,7 @@ const DesktopVacancySection = (props) => {
                             <div className="position">Solution Architect (Проектировщик веб-процессов)</div>
                             <div className="salary">от 750 EUR</div>
                             <div className="more">
-                                <div className="text">Детали</div>
+                                <div className="text">Подробнее</div>
                                 <RightArrow />
                             </div>
                         </div>
@@ -52,7 +52,7 @@ const DesktopVacancySection = (props) => {
                             <div className="position">PHP-программист</div>
                             <div className="salary">от 1000 EUR</div>
                             <div className="more">
-                                <div className="text">Детали</div>
+                                <div className="text">Подробнее</div>
                                 <RightArrow />
                             </div>
                         </div>
@@ -60,7 +60,7 @@ const DesktopVacancySection = (props) => {
                             <div className="position">Специалист машинного обучения</div>
                             <div className="salary">от 1300 EUR</div>
                             <div className="more">
-                                <div className="text">Детали</div>
+                                <div className="text">Подробнее</div>
                                 <RightArrow />
                             </div>
                         </div>
@@ -68,7 +68,7 @@ const DesktopVacancySection = (props) => {
                             <div className="position">Solution Architect (Проектировщик веб-процессов)</div>
                             <div className="salary">от 750 EUR</div>
                             <div className="more">
-                                <div className="text">Детали</div>
+                                <div className="text">Подробнее</div>
                                 <RightArrow />
                             </div>
                         </div>
@@ -82,7 +82,7 @@ const DesktopVacancySection = (props) => {
                             <div className="position">PHP-программист</div>
                             <div className="salary">от 1000 EUR</div>
                             <div className="more">
-                                <div className="text">Детали</div>
+                                <div className="text">Подробнее</div>
                                 <RightArrow />
                             </div>
                         </div>
@@ -90,7 +90,7 @@ const DesktopVacancySection = (props) => {
                             <div className="position">Специалист машинного обучения</div>
                             <div className="salary">от 1300 EUR</div>
                             <div className="more">
-                                <div className="text">Детали</div>
+                                <div className="text">Подробнее</div>
                                 <RightArrow />
                             </div>
                         </div>
@@ -98,7 +98,7 @@ const DesktopVacancySection = (props) => {
                             <div className="position">Solution Architect (Проектировщик веб-процессов)</div>
                             <div className="salary">от 750 EUR</div>
                             <div className="more">
-                                <div className="text">Детали</div>
+                                <div className="text">Подробнее</div>
                                 <RightArrow />
                             </div>
                         </div>

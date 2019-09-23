@@ -53,11 +53,11 @@ const AlternativesSection = () => {
                         Мы всегда открыты для перспективных и энергичных людей! Отправьте нам свое резюме, и в случае появления подходящей вакансии мы свяжемся с вами!
                     </div>
                 </div>
-            </div>
-            <div className="centered-button">
-                <div className="send-resume-button">
-                    Отправить резюме
-            </div>
+                <div className="centered-button">
+                    <div className="send-resume-button">
+                        Отправить резюме
+                    </div>
+                </div>
             </div>
         </div>
     );

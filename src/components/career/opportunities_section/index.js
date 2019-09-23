@@ -6,13 +6,15 @@ const OpportunitiesSection = () => {
     return (
         <div className="opportunities-section">
             <div className="opportunities-content">
-                <div className="quote">
-                    Не выходи из комнаты, не совершай ошибку...
-                    <div className="autor">- И. А. Бродский -</div>
-                </div>
                 <Desktop>
                     <Opportunity>
                         Только удаленная работа на мощном корпоративном портале
+                        <div className="quote">
+                            "Не выходи из комнаты, не совершай ошибку..."
+                            <div className="autor">
+                                И.А. Бродский
+                            </div>
+                        </div>
                     </Opportunity>
                     <Opportunity>
                         Масштабные и амбициозные задачи в разработке IT решений для бизнеса и освоении новых рынков
@@ -34,6 +36,12 @@ const OpportunitiesSection = () => {
                 <Mobile>
                     <Opportunity mobile={true}>
                         Только удаленная работа на мощном корпоративном портале
+                        <div className="quote">
+                            "Не выходи из комнаты, не совершай ошибку..."
+                            <div className="autor">
+                                И.А. Бродский
+                            </div>
+                        </div>
                     </Opportunity>
                     <br />
                     <Opportunity mobile={true}>
