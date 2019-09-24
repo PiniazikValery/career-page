@@ -1,10 +1,14 @@
 import React from 'react';
 import Opportunity from './Opportunity';
 import { Desktop, Mobile } from '../../../responsive_design';
+import { useMediaQuery } from 'react-responsive';
+import deviceSizes from '../../../responsive_design/device_sizes';
 
 const OpportunitiesSection = () => {
+    const isMobile = useMediaQuery({ query: `(max-width: ${deviceSizes.mobileMaxWidth}px)` });
+
     return (
-        <div className="opportunities-section">
+        <div className={`opportunities-section${isMobile ? ' mobile' : ''}`}>
             <div className="opportunities-content">
                 <Desktop>
                     <Opportunity>
@@ -38,6 +42,7 @@ const OpportunitiesSection = () => {
                         Только удаленная работа на мощном корпоративном портале
                         <div className="quote">
                             "Не выходи из комнаты, не совершай ошибку..."
+                            <br />
                             <div className="autor">
                                 И.А. Бродский
                             </div>

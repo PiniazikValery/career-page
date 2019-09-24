@@ -3,7 +3,7 @@ import { PlusIcon, MinusIcon } from './icons';
 
 const MobileVacancySection = (props) => {
     return (
-        <div id="vacancies" className="vacancy-section">
+        <div id="vacancies" className="vacancy-section mobile">
             <div className="vacancy-content">
                 <div className="intro">
                     Вакансии

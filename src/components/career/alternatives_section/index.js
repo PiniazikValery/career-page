@@ -38,7 +38,7 @@ const AlternativesSection = () => {
     }, []);
 
     return (
-        <div className="alternatives-section">
+        <div className={`alternatives-section${isMobile ? ' mobile' : ''}`}>
             {backgroundItems.map((item, index) => {
                 return <div key={index} className="background-item" style={{
                     top: `${item.top}%`,

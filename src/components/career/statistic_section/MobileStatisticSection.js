@@ -2,8 +2,8 @@ import React from 'react';
 
 const MobileStatisticSection = () => {
     return (
-        <div className="statistic-section">
-            <div className="map-background" style={{ backgroundImage: 'url("map.png")' }} />
+        <div className="statistic-section mobile">
+            <div className="map-background mobile" style={{ backgroundImage: 'url("map.png")' }} />
             <div className="statistic-content">
                 <div className="intro">
                     Рекрутинговый сайт интернет-магазина
