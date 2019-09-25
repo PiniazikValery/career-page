@@ -19,15 +19,15 @@ const ContactsSection = () => {
                 <div className={`options${isMobile ? ' mobile' : ''}`}>
                     <div className={`comments-option${isMobile ? ' mobile' : ''}`}>
                         <CommentsIcon />
-                        Комментарии к вакансиям
-                </div>
+                        <div className="option-text">Комментарии к вакансиям</div>
+                    </div>
                     <Desktop>
                         <div className="vl" />
                     </Desktop>
                     <div className={`email-option${isMobile ? ' mobile' : ''}`}>
                         <MailIcon />
-                        E-mail: hr@tile.expert
-                </div>
+                        <div className="option-text">E-mail: hr@tile.expert</div>
+                    </div>
                 </div>
                 <div className="social-links">
                     <InstagramIcon />
