@@ -32,15 +32,16 @@
             margin: auto;
             margin-bottom: 30px;
             width: 1230px;
-            box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+            box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.01), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
 
             .archive {
+                font-size: 14px;
                 position: absolute;
                 color: #1264A3;
                 cursor: pointer;
                 padding: 10px;
                 right: 0px;
-                top: -50px;
+                top: -45px;
             }
 
             .vacancy-section {
@@ -110,6 +111,7 @@
                     width: 32%;
                     line-height: 70px;
                     text-align: right;
+                    font-weight: bold;
 
                     .text {
                         display: inline-block;
@@ -137,12 +139,13 @@
                 color: #1264A3;
                 padding-top: 10px;
                 width: initial;
-                height: 42px;
+                max-height: 40px;
                 overflow: hidden;
                 line-height: initial;
             }
 
             .salary-wrapper {
+                padding-top: 5px;
                 position: relative;
                 padding-left: 30px;
                 width: 100%;
