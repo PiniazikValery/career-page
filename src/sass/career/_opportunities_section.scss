@@ -14,8 +14,8 @@
 
     .opportunity {
         display: inline-block;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
         padding-top: 20px;
         padding-bottom: 20px;
         width: 362px;
@@ -25,7 +25,7 @@
         vertical-align: top;
 
         .quote {
-            font-size: 12px;
+            font-size: 14px;
             font-weight: 400;
             line-height: 25pt;
             margin-bottom: 30px;
@@ -33,7 +33,8 @@
             .autor {
                 font-weight: normal;
                 line-height: 0pt;
-                font-size: 10px;
+                font-size: 14px;
+                padding-top: 5px;
                 font-style: italic;
                 color: gray;
             }
@@ -47,6 +48,51 @@
     }
     
     .opportunity.mobile {
-        width: 300px;
+        overflow: initial;
+        font-size: 16px;
+        text-align: center;
+        &:last-child {
+            &::after {
+                border-top: initial;
+            }
+            padding-top: initial;
+        }
+        width: 310px;
+        &:last-child {
+            padding-bottom: initial;
+            border-bottom: initial;
+        }
+        &::after {
+            position: relative;
+            width: 0;
+            content: '';
+            display: block;
+            border-top: 1px solid #25252521;
+            width: 80%;
+            top: 30px;
+            margin: auto;
+        }
+        &:first-child {
+            &::after {
+                top: 15px;
+            } 
+        }
+        
+        .quote {
+            margin-top: 5px;
+            margin-bottom: initial;
+            line-height: 15pt;
+            .autor {
+                display: inline;
+            }
+        }
+    }
+}
+
+.opportunities-section.mobile {
+    border-bottom: 50px solid transparent;
+
+    .opportunities-content{
+        border-top: 50px solid transparent;
     }
 }

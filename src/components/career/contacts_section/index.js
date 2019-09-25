@@ -9,7 +9,7 @@ const ContactsSection = () => {
 
     return (
         <div id="contact" className="contacts-section">
-            <div className="contacts-content">
+            <div className={`contacts-content${isMobile ? ' mobile' : ''}`}>
                 <div className="intro">
                     Контакты
                     <div className="description">Наш адрес: 199-189 Triq Ir-Repubblika, Il-Belt Valetta, Мальта</div>

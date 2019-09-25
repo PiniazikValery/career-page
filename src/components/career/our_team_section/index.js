@@ -8,7 +8,7 @@ const OurTeamSection = () => {
 
     return (
         <div id="our_team" className="our-team-section">
-            <div className="our-team-content">
+            <div className={`our-team-content${isMobile ? ' mobile' : ''}`}>
                 <div className="intro">
                     Наша команда
                     <div className="description">

@@ -1,8 +1,8 @@
 .statistic-section {
     position: relative;
     overflow: hidden;
+    border-bottom: 94px solid transparent;
     width: 100%;
-    height: 555px;
 
     .map-background {
         position: absolute;
@@ -12,6 +12,11 @@
         background-position: 50% 10%; 
         width: 100%;
         height: 100%;
+    }
+
+    .map-background.mobile {
+        background-size: 150%;
+        background-position: 50% 60%;
     }
 
     .look-at-vacancies {
@@ -37,8 +42,10 @@
     border-top: 94px solid transparent;
 
     .intro {
-        font-size: 20px;
+        font-size: 28px;
         font-weight: 400;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .statistic-numbers {
@@ -54,8 +61,10 @@
         }
 
         .from.mobile {
-            padding-left: 10px;
-            padding-right: 10px;
+            position: relative;
+            font-size: 14px;
+            width: 0;
+            top: -40px;
         }
 
         .statistic-number {
@@ -71,20 +80,32 @@
             } 
             display: inline-block;
             padding-bottom: 30px;
-            padding-left: 50px;
-            padding-right: 50px;
+            padding-left: 45px;
+            padding-right: 45px;
     
             .statistic-description {
                 font-weight: normal;
                 line-height: 15pt;
-                font-size: 10px;
+                font-size: 14px;
                 color: gray;
             }
         }
 
         .statistic-number.mobile {
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            .statistic-description {
+                width: 114px;
+            }
+
+            &:last-child {
+                padding-bottom: initial;
+
+                .statistic-description {
+                    width: initial;
+                }
+            }
         }
 
         .about-customers {
@@ -94,6 +115,11 @@
         .about-countries {
             padding-left: 25px;
         }
+
+        .about-countries.mobile {
+            position: relative;
+            top: -18px;
+        }
     }  
     
     .statistic-numbers.mobile {
@@ -101,9 +127,17 @@
     }
 }
 
+.statistic-section.mobile {
+    border-bottom: 50px solid transparent;
+
+    .statistic-content {
+        border-top: 50px solid transparent;
+    }
+}
+
 .te-logo {
     padding-left: 10px;
-    vertical-align: -50%;
+    vertical-align: -34%;
     margin-top:6.5px;
     background-size:100% auto;
     margin-right: 5px;

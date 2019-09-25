@@ -28,7 +28,10 @@
             left: 5%;
 
             .location {
-                padding-left: 5px;
+                font-weight: bold;
+                font-size: 14px;
+                padding-left: 20px;
+                padding-top: 20px;
                 text-align: left;
 
                 svg {
@@ -42,7 +45,7 @@
 
         .slider-layer {
             position: absolute;
-            top: 60px;
+            top: 87px;
             height: 100%;
             right: 0%;
             left: 2%;
