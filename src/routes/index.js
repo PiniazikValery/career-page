@@ -1,5 +1,5 @@
 import React from 'react';
-import { CareerPage, DanishSupportVacancyPage } from '../components/career';
+import { CareerPage, VacancyPage } from '../components/career';
 import { Route, Switch, Redirect } from 'react-router-dom';
 
 export const Routes = () => {
@@ -9,7 +9,13 @@ export const Routes = () => {
                 <Redirect to="/home" />
             </Route>
             <Route exact path="/home" component={CareerPage} />
-            <Route exact path="/vacancy/danish_support" component={DanishSupportVacancyPage} />
+            <Route exact path="/vacancy/php_programmer"
+                render={() => <VacancyPage
+                    vacancy="php_programmer"
+                    job_title="PHP-программист"
+                    salary={1000}
+                />}
+            />
         </Switch>
     );
 };

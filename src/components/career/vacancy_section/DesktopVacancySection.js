@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { PlusIcon, MinusIcon, RightArrow } from './icons';
 
 const DesktopVacancySection = (props) => {
@@ -22,7 +23,9 @@ const DesktopVacancySection = (props) => {
                             <div className="position">PHP-программист</div>
                             <div className="salary">от 1000 EUR</div>
                             <div className="more">
-                                <div className="text">Подробнее</div>
+                                <Link to="/vacancy/php_programmer">
+                                    <div className="text">Подробнее</div>
+                                </Link>
                                 <RightArrow />
                             </div>
                         </div>
@@ -52,7 +55,9 @@ const DesktopVacancySection = (props) => {
                             <div className="position">PHP-программист</div>
                             <div className="salary">от 1000 EUR</div>
                             <div className="more">
-                                <div className="text">Подробнее</div>
+                                <Link to="/vacancy/php_programmer">
+                                    <div className="text">Подробнее</div>
+                                </Link>
                                 <RightArrow />
                             </div>
                         </div>
@@ -82,7 +87,9 @@ const DesktopVacancySection = (props) => {
                             <div className="position">PHP-программист</div>
                             <div className="salary">от 1000 EUR</div>
                             <div className="more">
-                                <div className="text">Подробнее</div>
+                                <Link to="/vacancy/php_programmer">
+                                    <div className="text">Подробнее</div>
+                                </Link>
                                 <RightArrow />
                             </div>
                         </div>
