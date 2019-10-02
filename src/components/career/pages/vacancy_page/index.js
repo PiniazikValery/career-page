@@ -1,6 +1,7 @@
 import React from 'react';
 import AppBar from '../../app_bar';
 import VacancyTitleSection from '../../vacancy_title_section';
+import VacancyDescriptionSection from '../../vacancy_description_section';
 
 const VacancyPage = (props) => {
     return (
@@ -8,6 +9,7 @@ const VacancyPage = (props) => {
             <AppBar />
             <div className="content">
                 <VacancyTitleSection {...props} />
+                <VacancyDescriptionSection />
             </div>
         </div>
     );

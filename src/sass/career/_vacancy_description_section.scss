@@ -1,0 +1,78 @@
+.vacancy-description-section {
+    width: 100%;
+
+    .vacancy-description-content {
+        border-top: 94px solid transparent;
+        padding-left: 235px;
+        padding-right: 235px;
+
+        .content-header {
+            display: inline-block;
+            width: 100%;
+            .back-arrow {
+                float: left;
+                position: relative;
+                top: -4px;
+                padding-right: 5px;
+            }
+            .back-to-vacancies-page {
+                height: 10px;
+                float: left;
+                font-size: 14px;
+                color: #1264A3;
+            }
+            
+            .share-links {
+                font-size: 14px;
+                float: right;
+            }
+
+            .share-icon {
+                float: right;
+                padding-left: 32px;
+            }
+        }
+
+        .description {
+            padding-top: 65px;
+            text-align: left;
+            font-size: 16px;
+            line-height: 28px;
+            white-space:pre-wrap;
+        }
+
+        .req-block {
+            width: 100%;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            text-align: left;
+
+            .title {
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            ul {
+                list-style-type: none;
+                padding-left: 0px;
+
+                li {
+                    padding-left: 40px;
+                    display: inline-block;
+                }
+            }
+
+            .option-wrapper {
+                position: relative;
+                margin-bottom: 10px;
+
+                .option-point{
+                    top: 8px;
+                    left: 15px;
+                    position: absolute;
+                    display: inline;
+                }
+            }
+        }
+    }
+}
