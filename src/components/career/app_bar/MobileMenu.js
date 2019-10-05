@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BurgerIcon, CloseIcon } from './icons';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const MobileMenu = () => {
     const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -18,12 +19,12 @@ const MobileMenu = () => {
             }
             <div className={`mobile-list${isOpenMenu ? ' open' : ' close'}`}>
                 <ul className="list">
-                    <li><a href="#about">О нас</a></li>
-                    <li><a href="#hire_system">Система найма</a></li>
-                    <li><a href="#vacancies">Вакансий</a></li>
-                    <li><a href="#our_team">Наша команда</a></li>
-                    <li><a href="#contact">Контакты</a></li>
-                    <li><a href="#blogs">Блоги</a></li>
+                    <li><Link to="/home#about">О нас</Link></li>
+                    <li><Link to="/home#hire_system">Система найма</Link></li>
+                    <li><Link to="/home#vacancies">Вакансий</Link></li>
+                    <li><Link to="/home#our_team">Наша команда</Link></li>
+                    <li><Link to="/home#contact">Контакты</Link></li>
+                    <li><Link to="/home#blogs">Блоги</Link></li>
                 </ul>
             </div>
         </div>

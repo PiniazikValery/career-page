@@ -35,44 +35,79 @@
 
         .description {
             padding-top: 65px;
+            padding-bottom: 25px;
             text-align: left;
             font-size: 16px;
             line-height: 28px;
             white-space:pre-wrap;
         }
+        .req-blocks {
+            .req-block {
+                width: 100%;
+                padding-bottom: 25px;
+                text-align: left;
+    
+                .title {
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+    
+                ul {
+                    list-style-type: none;
+                    padding-left: 0px;
+    
+                    li {
+                        padding-left: 40px;
+                        display: inline-block;
+                    }
+                }
+    
+                .option-wrapper {
+                    position: relative;
+                    margin-bottom: 10px;
+                    white-space: pre-wrap;
+    
+                    .option-point{
+                        top: 8px;
+                        left: 15px;
+                        position: absolute;
+                        display: inline;
+                    }
+                }
+            }
+            
+            :last-child {
+                padding-bottom: 0px;
+            }
+        }
 
-        .req-block {
-            width: 100%;
+        
+        .about-decision {
+            text-align: left;
+            font-size: 16px;
+            font-weight: bold;
             padding-top: 25px;
             padding-bottom: 25px;
+        }
+
+        .footer {
             text-align: left;
+            padding-bottom: 25px;
+            font-size: 16px;
+        }
 
-            .title {
-                font-size: 16px;
-                font-weight: bold;
-            }
-
-            ul {
-                list-style-type: none;
-                padding-left: 0px;
-
-                li {
-                    padding-left: 40px;
-                    display: inline-block;
-                }
-            }
-
-            .option-wrapper {
-                position: relative;
-                margin-bottom: 10px;
-
-                .option-point{
-                    top: 8px;
-                    left: 15px;
-                    position: absolute;
-                    display: inline;
-                }
-            }
+        .fill-profile {
+            cursor: pointer;
+            line-height: 45px;
+            background-color: #4654AA;
+            border-radius: 5px;
+            color: white;
+            display: inline-block;
+            width: 211px;
+            margin-top: 60px;
+            left: 50%;
+            bottom: -25px;
+            height: 50px;
         }
     }
 }

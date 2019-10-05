@@ -7,9 +7,9 @@ const VacancyPage = (props) => {
     return (
         <div className="career-page">
             <AppBar />
-            <div className="content">
+            <div id="page-content" className="content">
                 <VacancyTitleSection {...props} />
-                <VacancyDescriptionSection />
+                <VacancyDescriptionSection {...props} />
             </div>
         </div>
     );
