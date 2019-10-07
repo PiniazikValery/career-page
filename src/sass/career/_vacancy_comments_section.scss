@@ -1,0 +1,97 @@
+.vacancy-comments-section {
+    width: 100%;
+
+    .vacancy-comments-content {
+        border-top: 94px solid transparent;
+        padding-left: 235px;
+        padding-right: 235px;
+        text-align: left;
+        overflow: hidden;
+
+        .answers-and-questions {
+            position: relative;
+            margin-bottom: 40px;
+
+            &::before{
+                content: '';
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                left: -235px;
+                width: 200px;
+                border-top: 2px solid #F0F1F3;
+            }
+            .text {
+                display: inline-block;
+                height: 20px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            &::after{
+                content: '';
+                display: inline-block;
+                position: absolute;
+                margin-left: 35px;
+                top: 50%;
+                width: 150%;
+                border-top: 2px solid #F0F1F3;
+            }
+        }
+
+        .vacancy-comment {
+            position: relative;
+            display: block;
+            
+            .vacancy-avatar {
+                position: absolute;
+                border-radius: 50%;
+                width: 40px;
+            }
+
+            .coment-content {
+                padding-left: 56px;
+                
+                .commentator-name {
+                    display: inline-block;
+                    top: 0;
+                    font-size: 14px;
+                    font-weight: bold;
+                    padding-bottom: 10px;
+                }
+
+                .position {
+                    display: inline-block;
+                    padding-left: 10px;
+                    font-size: 14px;
+                    color: #777777;
+                }
+
+                .comment-text {
+                    font-size: 14px;
+                    padding-bottom: 10px;
+                    line-height: 22px;
+                    white-space: pre-wrap;
+                }
+
+                .comment-date-n-place {
+                    font-size: 14px;
+                    color: #999999;
+                    display: inline-block;
+                }
+
+                .answer-link {
+                    display: inline;
+                    padding-left: 15px;
+                    font-size: 14px;
+                    color: #1264A3;
+                    cursor: pointer;
+                }
+            }
+
+            .answers {
+                padding-top: 20px;
+                padding-left: 55px;
+            }
+        }
+    }
+}

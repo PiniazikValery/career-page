@@ -12,7 +12,9 @@ const OpportunitiesSection = () => {
             <div className="opportunities-content">
                 <Desktop>
                     <Opportunity>
-                        Только удаленная работа на мощном корпоративном портале
+                        <div className="description">
+                            Только удаленная работа на мощном корпоративном портале
+                        </div>
                         <div className="quote">
                             "Не выходи из комнаты, не совершай ошибку..."
                             <div className="autor">
@@ -21,20 +23,30 @@ const OpportunitiesSection = () => {
                         </div>
                     </Opportunity>
                     <Opportunity>
-                        Масштабные и амбициозные задачи в разработке IT решений для бизнеса и освоении новых рынков
+                        <div className="description">
+                            Масштабные и амбициозные задачи в разработке IT решений для бизнеса и освоении новых рынков
+                    </div>
                     </Opportunity>
                     <Opportunity>
-                        Современные ресурсы (серверные, коммуникационные, FinTech, AI, Date Base)
+                        <div className="description">
+                            Современные ресурсы (серверные, коммуникационные, FinTech, AI, Date Base)
+                    </div>
                     </Opportunity>
                     <br />
                     <Opportunity>
-                        Профессиональное окружение из старательно отобранных коллег
+                        <div className="description">
+                            Профессиональное окружение из старательно отобранных коллег
+                    </div>
                     </Opportunity>
                     <Opportunity>
-                        Говорим на 9-ти иностранных языках и еще множество программных
+                        <div className="description">
+                            Говорим на 9-ти иностранных языках и еще множество программных
+                    </div>
                     </Opportunity>
                     <Opportunity>
-                        Предоставляем юридическую и бухгалтерскую помощь по всем вопросам сотрудничества и не только
+                        <div className="description">
+                            Предоставляем юридическую и бухгалтерскую помощь по всем вопросам сотрудничества и не только
+                    </div>
                     </Opportunity>
                 </Desktop>
                 <Mobile>
