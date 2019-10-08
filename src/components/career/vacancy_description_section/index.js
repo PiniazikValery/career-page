@@ -96,7 +96,9 @@ const VacancyDescriptionSection = (props) => {
                 <div className="footer">
                     {strings.footer}
                 </div>
-                <div className="fill-profile">{strings.fill_form}</div>
+                <Link to={`${props.match.path}/questionary`}>
+                    <div className="fill-profile">{strings.fill_form}</div>
+                </Link>
             </div>
         </div>
     );
