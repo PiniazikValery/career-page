@@ -9,7 +9,7 @@ const VacancyTitleSection = (props) => {
 
     return (
         <div className={`vacancy_title_section${isMobile ? ' mobile' : ''}`}>
-            <div className="map-background" style={{ backgroundImage: 'url("/map.png")' }} />
+            <div className="map-background" style={{ backgroundImage: 'url("map.png")' }} />
             <div className="vacancy-title">{strings[props.vacancy].name}</div>
             <div className="vacancy-salary">{strings[props.vacancy].salary}</div>
             <Link to={`${props.match.path}/questionary`}>

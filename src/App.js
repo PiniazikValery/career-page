@@ -8,7 +8,7 @@ import './sass/_career.scss';
 function App() {
   return (
     <div className="App">
-      <HashRouter basename='/'>
+      <HashRouter basename={process.env.PUBLIC_URL}>
         <Routes />
       </HashRouter>
     </div>

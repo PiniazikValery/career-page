@@ -8,7 +8,7 @@ import TextField from '@material-ui/core/TextField';
 let comments = [
     {
         id: 1,
-        avatar: '/vacancyImgs/unknown_user_ava.png',
+        avatar: 'vacancyImgs/unknown_user_ava.png',
         commentator_name: 'Кристина',
         position: undefined,
         text: 'Уже заполняла анкету на вашем сайте, но комментарий еще я не получила.',
@@ -17,7 +17,7 @@ let comments = [
         answers: [
             {
                 id: 2,
-                avatar: '/vacancyImgs/tile_expert_user_ava.png',
+                avatar: 'vacancyImgs/tile_expert_user_ava.png',
                 commentator_name: 'Дмитрук Станислав',
                 position: 'HR менеджер',
                 text: 'Кристина, здравствуйте! Опросник получили. Рассмотрим и я обязательно напишу в почту о результате',
@@ -28,7 +28,7 @@ let comments = [
     },
     {
         id: 3,
-        avatar: '/vacancyImgs/unknown_user_ava.png',
+        avatar: 'vacancyImgs/unknown_user_ava.png',
         commentator_name: 'Наталия',
         position: undefined,
         text: 'Здравствуйте,\nя не переводчик, но свободно владею в/у языками, т.к. высшее образование я получила в России, а работала в Польше. Кроме того, свободно понимаю украинский, но не говорю на нем.Прошу уточнить, работа на дому, или в офисе, т.к. я проживаю в Варшаве.\nСпасибо .',
@@ -37,7 +37,7 @@ let comments = [
         answers: [
             {
                 id: 4,
-                avatar: '/vacancyImgs/tile_expert_user_ava.png',
+                avatar: 'vacancyImgs/tile_expert_user_ava.png',
                 commentator_name: 'Дмитрук Станислав',
                 position: 'HR менеджер',
                 text: 'Здравствуйте! Наталия, ответили вам в почту',
