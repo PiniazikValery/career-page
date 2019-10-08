@@ -88,8 +88,8 @@
 
                 .position {
                     display: inline-block;
+                    vertical-align: middle;
                     width: 32%;
-                    line-height: 70px;
                     padding-left: 30px;
                     text-align: left;
                 }
@@ -97,7 +97,6 @@
                 .salary {
                     display: inline-block;
                     width: 32%;
-                    line-height: 70px;
                     text-align: center;
                     font-weight: normal;
                     line-height: 30pt;

@@ -1,16 +1,29 @@
 import React from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const AppBarList = () => {
     return (
         <div className="list-container">
             <ul className="app-bar-list">
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#hire_system">Система найма</a></li>
-                <li><a href="#vacancies">Вакансий</a></li>
-                <li><a href="#our_team">Наша команда</a></li>
-                <li><a href="#contact">Контакты</a></li>
+                <Link to="/home#about">
+                    <li>О нас</li>
+                </Link>
+                <Link to="/home#hire_system">
+                    <li>Система найма</li>
+                </Link>
+                <Link to="/home#vacancies">
+                    <li>Вакансий</li>
+                </Link>
+                <Link to="/home#our_team">
+                    <li>Наша команда</li>
+                </Link>
+                <Link to="/home#contact">
+                    <li>Контакты</li>
+                </Link>
             </ul>
-            <a className="app-bar-blogs" href="#blogs">Блоги</a>
+            <Link className="app-bar-blogs" to="/home#blogs">
+                Блоги
+            </Link>
         </div>
     );
 };

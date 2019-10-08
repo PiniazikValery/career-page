@@ -1,0 +1,174 @@
+.vacancy-description-section {
+    width: 100%;
+
+    .vacancy-description-content {
+        border-top: 94px solid transparent;
+        padding-left: 235px;
+        padding-right: 235px;
+
+        .content-header {
+            display: inline-block;
+            width: 100%;
+            .back-arrow {
+                float: left;
+                position: relative;
+                top: -4px;
+                padding-right: 5px;
+            }
+            .back-to-vacancies-page {
+                height: 10px;
+                float: left;
+                font-weight: bold;
+                font-size: 14px;
+                color: #1264A3;
+            }
+            
+            .share-links {
+                font-size: 14px;
+                float: right;
+            }
+
+            .share-icon {
+                float: right;
+                cursor: pointer;
+                padding-left: 32px;
+            }
+        }
+
+        .description {
+            padding-top: 65px;
+            padding-bottom: 25px;
+            text-align: left;
+            font-size: 16px;
+            line-height: 28px;
+            white-space:pre-wrap;
+        }
+        .req-blocks {
+            .req-block {
+                width: 100%;
+                padding-bottom: 25px;
+                text-align: left;
+    
+                .title {
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+    
+                ul {
+                    list-style-type: none;
+                    padding-left: 0px;
+    
+                    li {
+                        padding-left: 40px;
+                        display: inline-block;
+                    }
+                }
+    
+                .option-wrapper {
+                    position: relative;
+                    margin-bottom: 10px;
+                    white-space: pre-wrap;
+    
+                    .option-point{
+                        top: 8px;
+                        left: 15px;
+                        position: absolute;
+                        display: inline;
+                    }
+                }
+            }
+            
+            :last-child {
+                padding-bottom: 0px;
+            }
+        }
+
+        
+        .about-decision {
+            text-align: left;
+            font-size: 16px;
+            font-weight: bold;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        .footer {
+            text-align: left;
+            padding-bottom: 25px;
+            font-size: 16px;
+        }
+
+        .fill-profile {
+            cursor: pointer;
+            line-height: 45px;
+            background-color: #4654AA;
+            border-radius: 5px;
+            color: white;
+            display: inline-block;
+            width: 211px;
+            margin-top: 60px;
+            left: 50%;
+            bottom: -25px;
+            height: 50px;
+        }
+    }
+}
+
+.vacancy-description-section.mobile {
+    .vacancy-description-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .share-icon {
+        position: relative;
+        top: -3px;
+    }
+
+    .blackout {
+        position: fixed;
+        top:0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        background-color: black;
+        opacity: 0.5;
+    }
+
+    .mobile-share-menu {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 103px;
+        z-index: 4;
+        background-color: white;
+
+        .title {
+            text-align: initial;
+            padding-left: 20px;
+            padding-top: 17px;
+            padding-bottom: 15px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .share-icon {
+            display: inline-block;
+            padding-top: 3px;
+            padding-right: 30px;
+
+            .icon {
+                height: 24px;
+                width: 24px;
+            }
+
+            .icon-name {
+                font-size: 12px;
+            }
+
+            &:last-child{
+                padding-right: initial;
+            }
+        }
+    }
+}

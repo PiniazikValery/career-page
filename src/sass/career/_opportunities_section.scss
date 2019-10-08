@@ -19,18 +19,26 @@
         padding-top: 20px;
         padding-bottom: 20px;
         width: 362px;
-        height: 77px;
+        height: 85px;
         overflow: hidden;
         text-align: initial;
         vertical-align: top;
 
+        .description {
+            position: relative;
+            top: 10%;
+        }
+
         .quote {
+            padding-top: 17px;
             font-size: 14px;
             font-weight: 400;
-            line-height: 25pt;
+            line-height: 1em;
             margin-bottom: 30px;
     
             .autor {
+                margin-top: 7px;
+                padding-left: 80px;
                 font-weight: normal;
                 line-height: 0pt;
                 font-size: 14px;
@@ -82,7 +90,9 @@
             margin-top: 5px;
             margin-bottom: initial;
             line-height: 15pt;
+            padding-top: initial;
             .autor {
+                padding-left: initial;
                 display: inline;
             }
         }
