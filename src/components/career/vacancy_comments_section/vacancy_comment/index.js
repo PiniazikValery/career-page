@@ -6,10 +6,10 @@ const VacancyComment = (props) => {
             <img alt="avatar" className="vacancy-avatar" src={props.avatar} />
             <div className="coment-content">
                 <div className="commentator-name">
-                    {props.commentator_name + (props.position ? ',' : '')}
-                </div>
-                <div className="position">
-                    {props.position}
+                    {props.commentator_name + (props.position ? ', ' : '')}
+                    <div className="position">
+                        {props.position}
+                    </div>
                 </div>
                 <div className="comment-text">
                     {props.text}

@@ -1,5 +1,9 @@
 import React from 'react';
 import VacancyComment from './vacancy_comment';
+import { Mobile } from '../../../responsive_design';
+import { useMediaQuery } from 'react-responsive';
+import deviceSizes from '../../../responsive_design/device_sizes';
+import TextField from '@material-ui/core/TextField';
 
 let comments = [
     {
@@ -45,6 +49,8 @@ let comments = [
 ];
 
 const VacancyCommentsSection = () => {
+    const isMobile = useMediaQuery({ query: `(max-width: ${deviceSizes.mobileMaxWidth}px)` });
+
     const RenderComments = (comments) => {
         return (comments.map(comment => {
             return (
@@ -64,14 +70,44 @@ const VacancyCommentsSection = () => {
     };
 
     return (
-        <div className="vacancy-comments-section">
+        <div className={`vacancy-comments-section${isMobile ? ' mobile' : ''}`}>
             <div className="vacancy-comments-content">
                 <div className="answers-and-questions">
                     <div className="text">
                         Вопросы и ответы
                     </div>
+                    <Mobile>
+                        <div className="line-between" />
+                        <div className="ask-questions">
+                            Задать вопросы
+                        </div>
+                    </Mobile>
                 </div>
                 {RenderComments(comments)}
+                <div className="send-comment-section">
+                    <TextField
+                        className="mui-input name"
+                        id="outlined-name"
+                        label="Имя"
+                        margin="normal"
+                        variant="outlined"
+                    />
+                    <TextField
+                        className="mui-input email"
+                        id="outlined-name"
+                        label="Эл. почта (не будет показываться на сайте)"
+                        margin="normal"
+                        variant="outlined"
+                    />
+                    <div className="message">
+                        <textarea
+                            placeholder="Сообщение"
+                        />
+                    </div>
+                </div>
+                <div className="send-button-wrapper">
+                    <div className="send-button">Отправить</div>
+                </div>
             </div>
         </div>
     );
