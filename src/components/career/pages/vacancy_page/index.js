@@ -6,7 +6,7 @@ import VacancyCommentsSection from '../../vacancy_comments_section';
 
 const VacancyPage = (props) => {
     return (
-        <div className="career-page">
+        <div className="page">
             <AppBar />
             <div id="page-content" className="content">
                 <VacancyTitleSection {...props} />

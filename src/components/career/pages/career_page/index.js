@@ -11,7 +11,7 @@ import ContactsSection from '../../contacts_section';
 
 const Career = () => {
     return (
-        <div className="career-page">
+        <div className="page">
             <AppBar />
             <div className="content">
                 <StatisticSection />

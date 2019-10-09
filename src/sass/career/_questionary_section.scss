@@ -1,0 +1,61 @@
+.questionary-section{
+    width: 100%;
+
+    .content{
+        padding-left: 345px;
+        padding-right: 345px;
+        padding-top: initial;
+
+        .step-number {
+
+        }
+
+        .title {
+
+        }
+
+        .contact-info-questions{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+            .mui-input {
+                width: 49%;
+                padding-bottom: 25px;
+            }
+        }
+
+        .mui-input {
+            margin: initial;
+
+            label {
+                white-space: nowrap;
+                font-size: 14px;
+                top: -3px;
+                line-height: 0;
+            }
+
+            label.Mui-focused {
+                white-space: nowrap;
+                top: -2px;
+                line-height: 1;
+            }
+
+            label.MuiFormLabel-filled {
+                white-space: nowrap;
+                top: -2px;
+                line-height: 1;
+            }
+
+            .MuiInputBase-root {                    
+                height: 35px;
+
+                input {
+                    font-size: 14px;
+                    padding-top: initial;
+                    padding-bottom: initial;
+                }
+            }
+        }
+    }
+}
