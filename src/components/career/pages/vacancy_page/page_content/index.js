@@ -26,34 +26,6 @@ let strings = new LocalizedStrings({
         share: "Поделиться",
         about_decision: 'Решение о сотрудничестве принимается на основе анкеты, кейса и удаленного (в чате) собеседования',
         footer: 'Мы благодарны всем соискателям, заполнившим документы на рассмотрение их кандидатуры, однако в связи с загруженностью сможем ответить только тем претендентам, которые вызовут интерес с нашей стороны (в течение 3 дней)',
-        main_questions: {
-            name: "Имя",
-            surname: "Фамилия",
-            email: "Эл. почта",
-            phone_number: "Телефон",
-            questionnaire: {
-                country: "Страна",
-                education: "Образование",
-                date_of_birth: "Дата рождения",
-                experience: "Опыт работы",
-                peoples_qualities: "Качества, которые вы больше всего цените в человеке?",
-                hobby: "Какое у вас хобби?",
-                idea_of_happiness: "Ваша идея о счастье?",
-                where_would_you_like_to_live: "Где вам хотелось бы жить?",
-                favorite_writers: "Ваши любимые писатели?",
-                favorite_artists_and_composers: "Ваши любимые художники и композиторы?",
-                favorite_professional_literature: "Ваша любимая профессиональная литература?",
-                condescending_vices: "К каким порокам вы чувствуете наибольшее снисхождение?"
-            },
-            prof_questionnaire: {
-                city: "В каком городе вы живете?",
-                favorite_real_heroes: "Ваши любимые герои в реальной жизни?",
-                necessary_resources: "Что вам необходимо (какие ресурсы), чтобы быть успешным в нашей компании?",
-                motivation: "Что побуждает человека работать с наибольшей отдачей? И что, наоборот, может демотивировать?",
-                mistakes: "Случалось ли вам допускать ошибки в работе?",
-                temperament: "Ваш тип темперамента?"
-            }
-        },
         php_programmer: php_vacancy_content_ru,
         machine_learning_specialist: machine_learning_specialist_ru,
         solution_architect: solution_architect_ru,
