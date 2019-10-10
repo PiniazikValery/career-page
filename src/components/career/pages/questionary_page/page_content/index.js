@@ -12,6 +12,7 @@ let strings = new LocalizedStrings({
             { question: "Страна" },
             { question: "Образование" },
             { question: "Дата рождения" },
+            { question: "Ссылка не резюме" },
             { question: "Опыт работы" },
             { question: "Качества, которые вы больше всего цените в человеке?" },
             { question: "Какое у вас хобби?" },

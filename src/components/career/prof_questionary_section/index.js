@@ -1,8 +1,7 @@
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
 
-const ContactInfoQuestionarySection = (props) => {
-
+const ProfQuestionarySection = (props) => {
     const RenderQuestions = () => {
         let { questions, onUpdateAnswer, onUpdateAnswerHook } = props;
         return (questions.map((question, index) => {
@@ -21,18 +20,15 @@ const ContactInfoQuestionarySection = (props) => {
     };
 
     return (
-        <div className="contact-info-questions-section">
-            <div className="step-number">
-                Шаг 1
-            </div>
+        <div className="prof-questionary-section">
             <div className="title">
-                Контактная информация
+                Просим заполнить нашу профессиональную анкету
             </div>
-            <div className="contact-info-questions">
+            <div className="prof-questions">
                 {RenderQuestions()}
             </div>
         </div>
     );
 };
 
-export default ContactInfoQuestionarySection;
+export default ProfQuestionarySection;

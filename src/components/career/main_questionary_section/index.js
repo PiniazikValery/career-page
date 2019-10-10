@@ -1,14 +1,13 @@
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
 
-const ContactInfoQuestionarySection = (props) => {
-
+const MainQuestionarySection = (props) => {
     const RenderQuestions = () => {
         let { questions, onUpdateAnswer, onUpdateAnswerHook } = props;
         return (questions.map((question, index) => {
             return (
                 <TextField
-                    className="mui-input"
+                    className={`mui-input${index === 2 || index === 3 ? ' onhalf' : ''}`}
                     id="outlined-name"
                     key={question.question}
                     onChange={(event) => onUpdateAnswer(index, event.target.value, onUpdateAnswerHook, questions)}
@@ -21,18 +20,18 @@ const ContactInfoQuestionarySection = (props) => {
     };
 
     return (
-        <div className="contact-info-questions-section">
+        <div className="main-questionary-section">
             <div className="step-number">
-                Шаг 1
+                Шаг 3
             </div>
             <div className="title">
-                Контактная информация
+                Анкета
             </div>
-            <div className="contact-info-questions">
+            <div className="main-questions">
                 {RenderQuestions()}
             </div>
         </div>
     );
 };
 
-export default ContactInfoQuestionarySection;
+export default MainQuestionarySection;

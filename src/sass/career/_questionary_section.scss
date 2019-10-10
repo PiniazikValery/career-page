@@ -1,29 +1,10 @@
 .questionary-section{
     width: 100%;
 
-    .content{
+    .content {
         padding-left: 345px;
         padding-right: 345px;
         padding-top: initial;
-
-        .step-number {
-
-        }
-
-        .title {
-
-        }
-
-        .contact-info-questions{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            
-            .mui-input {
-                width: 49%;
-                padding-bottom: 25px;
-            }
-        }
 
         .mui-input {
             margin: initial;
@@ -55,6 +36,134 @@
                     padding-top: initial;
                     padding-bottom: initial;
                 }
+            }
+        }
+
+        .contact-info-questions-section {
+            padding-top: 20px;
+
+            .step-number {
+                font-size: 14px;
+                color: #89949B;
+                padding-bottom: 5px;
+            }
+    
+            .title {
+                font-size: 24px;
+                padding-bottom: 30px;
+            }
+    
+            .contact-info-questions{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                
+                .mui-input {
+                    width: 49%;
+                    padding-bottom: 25px;
+                }
+            }
+        }
+
+        .cases-questionary-section {
+            .step-number {
+                font-size: 14px;
+                color: #89949B;
+                padding-bottom: 5px;
+            }
+
+            .title {
+                font-size: 24px;
+                padding-bottom: 40px;
+            }
+
+            .case {
+                text-align: left;
+                .case-question {
+                    font-size: 14px;
+                    padding-bottom: 40px;
+                }
+                .case-answer{
+                    width: 100%;
+                    height: 120px;
+                    border-radius: 3px;
+                    padding-top: 9px;
+                    padding-left: 13px;
+                    margin-bottom: 40px;
+                    resize: none;
+                }
+            }
+        }
+
+        .main-questionary-section {
+            .step-number{
+                font-size: 14px;
+                color: #89949B;
+                padding-bottom: 5px;
+            }
+
+            .title {
+                font-size: 24px;
+                padding-bottom: 30px;
+            }
+
+            .main-questions {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .mui-input {
+                    width: 100%;
+                    padding-bottom: 25px;
+                }
+
+                .mui-input.onhalf {
+                    width: 49%;
+                }
+            }
+        }
+
+        .prof-questionary-section {
+            .title {
+                text-align: left;
+                padding-top: 12px;
+                padding-bottom: 15px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .prof-questions {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .mui-input {
+                    width: 100%;
+                    padding-bottom: 25px;
+                }
+            }
+        }
+
+        .send-button {
+            cursor: pointer;
+            line-height: 45px;
+            background-color: #4654AA;
+            border-radius: 5px;
+            color: white;
+            display: inline-block;
+            width: 130px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            left: 50%;
+            bottom: -25px;
+            height: 50px;
+        }
+
+        .get-email-copy {
+            display: block;
+
+            .MuiTypography-root {
+                font-size: 14px;
             }
         }
     }
