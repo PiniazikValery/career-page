@@ -10,32 +10,50 @@
             margin: initial;
 
             label {
-                white-space: nowrap;
+                word-wrap: break-word;
+                text-align: start;
+                word-spacing: 2px;
+                line-height: 22px;
                 font-size: 14px;
-                top: -3px;
-                line-height: 0;
+                padding-top:10px;
+                padding-left: 15px;
+                padding-right: 10px;
+                word-wrap: none;
+                max-width: 95%;
+                transform: translate(0px, -0px) scale(1);
             }
 
             label.Mui-focused {
+                transform: translate(10px, -15px) scale(0.75);
                 white-space: nowrap;
-                top: -2px;
-                line-height: 1;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
             label.MuiFormLabel-filled {
+                transform: translate(10px, -15px) scale(0.75);
                 white-space: nowrap;
-                top: -2px;
-                line-height: 1;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
-            .MuiInputBase-root {                    
-                height: 35px;
-
-                input {
+            .MuiInputBase-root {  
+                ::placeholder {
+                    text-align: start;
+                    word-spacing: 2px;
+                    line-height: 22px;
                     font-size: 14px;
-                    padding-top: initial;
-                    padding-bottom: initial;
+                    word-wrap: none;
+                    font-weight: 500;
                 }
+                white-space: pre-line;
+                line-height: 22px;
+                min-height: 15px;
+                padding-left: 15px;
+                padding-right: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 15px;
             }
         }
 
@@ -54,6 +72,7 @@
             }
     
             .contact-info-questions{
+                padding-top: 10px;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
@@ -66,6 +85,8 @@
         }
 
         .cases-questionary-section {
+            padding-top: 32px;
+
             .step-number {
                 font-size: 14px;
                 color: #89949B;
@@ -91,6 +112,13 @@
                     padding-left: 13px;
                     margin-bottom: 40px;
                     resize: none;
+                    box-sizing: border-box;
+                }
+
+                &:last-child {
+                    .case-answer{ 
+                        margin-bottom: 57px;
+                    }
                 }
             }
         }
@@ -104,7 +132,7 @@
 
             .title {
                 font-size: 24px;
-                padding-bottom: 30px;
+                padding-bottom: 40px;
             }
 
             .main-questions {
@@ -166,5 +194,13 @@
                 font-size: 14px;
             }
         }
+    }
+}
+
+.questionary-section.mobile {
+    .content {
+        overflow: hidden;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
