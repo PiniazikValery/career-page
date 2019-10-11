@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import VacancyPage from '../../../components/career/pages/vacancy_page';
-import QuestionaryPage from '../../../components/career/pages/questionary_page';
+import { QuestionaryPage } from '../../../components/career';
 
 const VacancyPageRoutes = (props) => {
     return (

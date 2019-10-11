@@ -1,13 +1,13 @@
 import React from 'react';
-import AppBar from '../../app_bar';
-import StatisticSection from '../../statistic_section';
-import OpportunitiesSection from '../../opportunities_section';
-import OurTeamSection from '../../our_team_section';
-import HireSystemSection from '../../hire_system_section';
-import VacancySection from '../../vacancy_section';
-import AlternativesSection from '../../alternatives_section';
-import OurRelaxSection from '../../our_relax_section';
-import ContactsSection from '../../contacts_section';
+import AppBar from '../../layout/app_bar';
+import StatisticSection from '../../main_page_components/statistic_section';
+import OpportunitiesSection from '../../main_page_components/opportunities_section';
+import OurTeamSection from '../../main_page_components/our_team_section';
+import HireSystemSection from '../../main_page_components/hire_system_section';
+import VacancySection from '../../main_page_components/vacancy_section';
+import AlternativesSection from '../../main_page_components/alternatives_section';
+import OurRelaxSection from '../../main_page_components/our_relax_section';
+import ContactsSection from '../../main_page_components/contacts_section';
 
 const Career = () => {
     return (
