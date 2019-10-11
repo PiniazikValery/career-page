@@ -12,7 +12,7 @@ const CasesQuestionarySection = (props) => {
                     <textarea
                         placeholder="Ваш ответ"
                         className="case-answer"
-                        onChange={(event) => onUpdateAnswer(index, event.target.value, onUpdateAnswerHook, questions)}
+                        onBlur={(event) => onUpdateAnswer(index, event.target.value, onUpdateAnswerHook, questions)}
                     />
                 </div>
             );

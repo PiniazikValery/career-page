@@ -9,9 +9,12 @@ const MainQuestionarySection = (props) => {
                 <TextField
                     className={`mui-input${index === 2 || index === 3 ? ' onhalf' : ''}`}
                     id="outlined-name"
+                    multiline
                     key={question.question}
-                    onChange={(event) => onUpdateAnswer(index, event.target.value, onUpdateAnswerHook, questions)}
+                    onBlur={(event) => onUpdateAnswer(index, event.target.value, onUpdateAnswerHook, questions)}
+                    onFocus={(e) => { e.target.placeholder = '' }}
                     label={question.question}
+                    placeholder={question.question}
                     margin="normal"
                     variant="outlined"
                 />

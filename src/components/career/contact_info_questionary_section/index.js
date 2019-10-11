@@ -10,9 +10,13 @@ const ContactInfoQuestionarySection = (props) => {
                 <TextField
                     className="mui-input"
                     id="outlined-name"
+                    multiline
+                    rowsMax={1}
                     key={question.question}
-                    onChange={(event) => onUpdateAnswer(index, event.target.value, onUpdateAnswerHook, questions)}
+                    onBlur={(event) => onUpdateAnswer(index, event.target.value, onUpdateAnswerHook, questions)}
+                    onFocus={(e) => { e.target.placeholder = '' }}
                     label={question.question}
+                    placeholder={question.question}
                     margin="normal"
                     variant="outlined"
                 />

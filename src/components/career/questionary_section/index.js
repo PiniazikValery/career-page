@@ -7,8 +7,11 @@ import MainQuestionarySection from '../main_questionary_section';
 import ProfQuestionarySection from '../prof_questionary_section';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
+import { useMediaQuery } from 'react-responsive';
+import deviceSizes from '../../../responsive_design/device_sizes';
 
 const QuestionarySection = (props) => {
+    const isMobile = useMediaQuery({ query: `(max-width: ${deviceSizes.mobileMaxWidth}px)` });
     const [contactInfoAnswers, setContactInfoAnswers] = useState(questions.main_questions);
     const [questionaryAnswers, setQuestionaryAnswers] = useState(questions.questionnaire);
     const [profQuestionaryAnswers, setProfQuestionaryAnswers] = useState(questions.prof_questionnaire);
@@ -25,7 +28,7 @@ const QuestionarySection = (props) => {
     };
 
     return (
-        <div className="questionary-section">
+        <div className={`questionary-section${isMobile ? ' mobile' : ''}`}>
             <div className="content">
                 <ContactInfoQuestionarySection
                     questions={contactInfoAnswers}
