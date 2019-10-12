@@ -11,6 +11,7 @@
 @import '_vacancy_description_section.scss';
 @import '_vacancy_comments_section.scss';
 @import '_questionary_section.scss';
+@import '_how_we_are_working_section.scss';
 
 .content {
     padding-top: 68px;
@@ -18,4 +19,8 @@
 
 .page {
     font-family: Lato;
+}
+
+body {
+    background-color: #FAFBFC;
 }
